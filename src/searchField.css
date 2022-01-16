@@ -1,11 +1,12 @@
 .gif--form{
-    background-color: rgb(111, 71, 255);    
+    background-color: rgb(35, 153, 35);    
     color:rgb(255, 255, 255);
     width: 1000px;
     margin: auto;
     font-weight: bold;
-    padding:30px;
-    margin-top: 25px
+    padding:30px 15px 30px 15px;
+    margin-top: 25px;
+    opacity: 0.8;
 }
 
 .input-field{
@@ -39,8 +40,17 @@
 }
 .submit-btn:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: rgb(97, 2, 18);
+    background-color: rgb(255, 255, 255);
 }
 .label{
     padding-left: 150px;
+}
+#submit_button{
+    background-color: rgb(139, 0, 0);
+}
+#trending_button{
+    background-color: rgb(4, 4, 150); 
+}
+#random_button{
+    background-color: rgb(0, 0, 0); 
 }

@@ -28,15 +28,16 @@ export default function SearchField(){
         fetch(apiUrl)
             .then(res => res.json())
             .then(dataJson =>{
-                
-                setGifArray(dataJson.data)
-                
+                if(apiUrl !== randomApiUrl){
+                    setGifArray(dataJson.data)
+                }else{
+                    setGifArray([dataJson.data])
+                }    
             })
 
         };
         
     const renderGifs = gifArray.map((item) => {
-        //console.log(item);
         return (
             <GifCard 
                 {...item}

@@ -5,8 +5,18 @@
     width:1000px;
     margin: auto;
     margin-top: 20px;
+    max-height: 50px;
+    align-items: center;
 }
 .giffy{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+
+}
+/* If only one gif exists...*/
+.giffy:nth-child(1):nth-last-child(1)
+{
+    width: 100%;
+    height: 100%;
 }
